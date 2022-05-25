@@ -14,6 +14,6 @@ app.get('/gerar-teste', function(req, res) {
   res.render('Gerar-Teste.ejs');
 })
 
-app.listen(80, () => {
-  console.log(`Servidor rodando na porta 80`);
+app.listen(3000, () => {
+  console.log(`Servidor rodando na porta 3000`);
 });
