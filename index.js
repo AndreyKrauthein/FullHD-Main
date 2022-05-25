@@ -1,6 +1,8 @@
 var express = require("express");
 var app = express();
 
+const port = process.env.PORT || 3000
+
 app.set("view engine", "html");
 app.set("views", "./client");
 
@@ -14,6 +16,6 @@ app.get('/gerar-teste', function(req, res) {
   res.render('Gerar-Teste.ejs');
 })
 
-app.listen(3000, () => {
-  console.log(`Servidor rodando na porta 3000`);
+app.listen(port, () => {
+  console.log(`Servidor rodando`);
 });
